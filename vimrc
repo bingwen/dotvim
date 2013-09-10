@@ -5,8 +5,8 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 set nu
 set tabstop=4
@@ -14,6 +14,15 @@ set softtabstop=4
 set selectmode=
 set sw=4
 set expandtab
+
+set showcmd "在状态栏显示命令
+set showmatch
+set report=0 "显示修改次数
+set incsearch "搜索自动跳转到
+set ignorecase
+set smartcase
+set cursorline "当前行
+set cc=76 "右边界
 
 set encoding=utf-8                                  
 set termencoding=utf-8
