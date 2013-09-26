@@ -7,6 +7,9 @@ filetype plugin indent on
 
 "set background=dark
 "colorscheme solarized
+"
+"" Disable python folding
+let g:pymode_folding = 0
 
 set nu
 set tabstop=4
@@ -28,6 +31,8 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,big5,gb2312,latin1
+
+set pastetoggle=<F2>
 
 autocmd FileType python set sw=4 
 autocmd FileType python set ts=4
