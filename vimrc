@@ -10,6 +10,7 @@ filetype plugin indent on
 "
 "" Disable python folding
 let g:pymode_folding = 0
+"let g:pymode = 1
 
 set nu
 set tabstop=4
