@@ -28,6 +28,8 @@ set smartcase
 set cursorline "当前行
 set cc=76 "右边界
 
+set clipboard=unnamed
+
 set encoding=utf-8                                  
 set termencoding=utf-8
 set fileencoding=utf-8
@@ -39,4 +41,3 @@ autocmd FileType python set sw=4
 autocmd FileType python set ts=4
 autocmd FileType ruby,javascript,html,erb,markdown set sw=2 
 autocmd FileType ruby,javascript,html,erb,markdown set ts=2 
-
