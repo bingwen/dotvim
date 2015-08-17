@@ -6,6 +6,8 @@ call pathogen#helptags()
 
 "" Disable python folding
 let g:pymode_folding = 0
+let g:pymode_lint_on_fly = 0
+let g:pymode_lint_options_pep8 ={'max_line_length': 200}
 
 syntax enable
 syntax on
@@ -29,7 +31,7 @@ set incsearch "搜索自动跳转到
 set ignorecase
 set smartcase
 set cursorline "当前行
-set cursorcolumn "当前列
+"set cursorcolumn "当前列
 set cc=80 "右边界
 
 set clipboard=unnamed
