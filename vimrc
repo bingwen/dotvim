@@ -6,8 +6,11 @@ call pathogen#helptags()
 
 "" Disable python folding
 let g:pymode_folding = 0
-let g:pymode_lint_on_fly = 0
-let g:pymode_lint_options_pep8 ={'max_line_length': 200}
+let g:pymode_rope = 0
+let g:pymode_lint = 0
+let g:pymode_trim_whitespaces = 0
+
+autocmd BufWritePost *.py call Flake8()
 
 syntax enable
 syntax on
