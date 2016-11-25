@@ -37,19 +37,19 @@ set updatetime=250
 nnoremap <space> za
 vnoremap <space> zf
 
-autocmd FileType python set sw=4
-autocmd FileType python set ts=4
-autocmd FileType yaml,ruby,javascript,html,erb,markdown set sw=2
-autocmd FileType yaml,ruby,javascript,html,erb,markdown set ts=2
-autocmd FileType go,make set noexpandtab
-
 let g:gitgutter_map_keys = 0
 let g:gitgutter_realtime = 1
+set completeopt-=preview
 
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'Valloric/YouCompleteMe'
 Plug 'nvie/vim-flake8'
 call plug#end()
+
+autocmd FileType python set sw=4
+autocmd FileType python set ts=4
+autocmd FileType yaml,ruby,javascript,html,erb,markdown set sw=2
+autocmd FileType yaml,ruby,javascript,html,erb,markdown set ts=2
 
 autocmd BufWritePost *.py call Flake8()
