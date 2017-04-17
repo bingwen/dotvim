@@ -4,7 +4,7 @@ syntax on "语法高亮
 filetype plugin indent on
 filetype plugin on
 
-set nu "行号
+"set nu "行号
 set expandtab "把制表符转换为多个空格
 set tabstop=4 "插入模式下输入一个制表符占据的空格数
 set softtabstop=4 "如何处理连续多个空格
