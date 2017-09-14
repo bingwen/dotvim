@@ -4,7 +4,7 @@ syntax on "语法高亮
 filetype plugin indent on
 filetype plugin on
 
-"set nu "行号
+set nu "行号
 set expandtab "把制表符转换为多个空格
 set tabstop=4 "插入模式下输入一个制表符占据的空格数
 set softtabstop=4 "如何处理连续多个空格
@@ -23,6 +23,7 @@ set smartcase
 set cursorline "当前行
 "set cursorcolumn "当前列
 set cc=80 "右边界
+set backspace=2
 
 set encoding=utf-8
 set termencoding=utf-8
@@ -45,8 +46,6 @@ let g:SimpylFold_fold_import = 0
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'Valloric/YouCompleteMe'
-Plug 'nvie/vim-flake8'
-Plug 'tmhedberg/SimpylFold'
 call plug#end()
 
 autocmd FileType python set sw=4
